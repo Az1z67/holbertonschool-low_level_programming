@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*main -prints _putchar
-*
-*void -defines _putchar function
-*
-*Return: Always 0.
-*/
+ * main - Entry point
+ *
+ * Description: Prints _putchar
+ *
+ * Return: Always 0
+ */
 void _putchar(char c);
 int main(void)
 {
