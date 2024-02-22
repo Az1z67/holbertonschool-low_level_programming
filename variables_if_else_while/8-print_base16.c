@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+/**
+*main - function prints digits
+*
+*Return: Always 0.
+**/
+
+
+int main(void)
+{
+int i;
+for (i = 0 ; i <= 15 ; i++)
+{
+if (i < 10)
+putchar('0' + i);
+else
+putchar('a' + i - 10);
+}
+putchar('\n');
+return (0);
+}
