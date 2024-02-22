@@ -2,10 +2,10 @@
 
 
 /**
-*main - function prints single digit numbers base 10
+*main - function prints single digit numbers to 10
 *
 *Return: Always 0.
-*/
+**/
 
 
 int main(void)
