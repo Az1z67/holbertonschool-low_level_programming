@@ -2,19 +2,25 @@
 
 
 /**
-*main - function prints single digit numbers to 10
+*main - function prints digits with ,
 *
 *Return: Always 0.
 **/
 
 
+
 int main(void)
 {
 int i;
-for (i = 0 ; i < 10  ; i++)
+for (i = 0 ; i < 10 ; i++)
 {
-printf("%d", i);
+putchar('0' + i);
+if (i < 9)
+{
+putchar(',');
+putchar(' ');
 }
-printf("\n");
+}
+putchar('\n');
 return (0);
 }
