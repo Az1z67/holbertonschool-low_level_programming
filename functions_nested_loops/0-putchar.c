@@ -1,15 +1,23 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * @c: The character to print
+ * _putchar - Writes a character to stdout
+ * @c: The character to be printed
  *
- * main - Entry point
+ * Description: This function writes the character c to stdout.
  *
- * Description: Prints _putchar
- *
- * Return: Always 0
+ * Return: On success, 1. On error, -1 is returned, and errno is set appropriately.
  */
 void _putchar(char c);
+
+/**
+ * main - Entry point of the program
+ *
+ * Description: This function prints characters using the _putchar function.
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 _putchar('_');
