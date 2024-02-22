@@ -7,14 +7,14 @@
  *
  * Description: This function writes the character c to stdout.
  *
- * Return: On success, 1. On error, -1 is returned, and errno is set appropriately.
+ * Return: On success, 1. On error, -1 is returned.
  */
 void _putchar(char c);
 
 /**
  * main - Entry point of the program
  *
- * Description: This function prints characters using the _putchar function.
+ * Description: This function prints characters 
  *
  * Return: Always 0 (success)
  */
