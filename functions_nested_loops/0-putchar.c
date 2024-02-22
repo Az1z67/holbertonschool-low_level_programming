@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
+ * @c: The character to print
+ *
  * main - Entry point
  *
  * Description: Prints _putchar
