@@ -1,21 +1,20 @@
 #include <stdio.h>
 
 int main() {
-    int a = 1, b = 2;
-    int next;
+    int a = 1, b = 2, c;
     int i;
 
     printf("%d, %d, ", a, b);
 
     for (i = 3; i <= 98; ++i) {
-        next = a + b;
-        printf("%d", next);
+        c = a + b;
+        printf("%d", c);
 
         if (i != 98)
             printf(", ");
 
         a = b;
-        b = next;
+        b = c;
     }
 
     printf("\n");
