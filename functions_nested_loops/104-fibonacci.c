@@ -3,10 +3,11 @@
 int main() {
     int a = 1, b = 2;
     int next;
+    int i;
 
     printf("%d, %d, ", a, b);
 
-    for (int i = 3; i <= 98; ++i) {
+    for (i = 3; i <= 98; ++i) {
         next = a + b;
         printf("%d, ", next);
         a = b;
