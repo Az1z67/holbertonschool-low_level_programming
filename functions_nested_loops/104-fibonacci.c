@@ -5,7 +5,7 @@ int main() {
     long long int next;
     int i;
 
-    printf("%ld, %ld, ", a, b);
+    printf("%d, %d, ", a, b);
 
     for (i = 3; i <= 98; ++i) {
         next = a + b;
