@@ -1,8 +1,8 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 void print_times_table(int n) {
-    int i, j; /* Переместим объявление переменных в начало функции */
+    int i, j;
 
     if (n < 0 || n > 15)
         return;
@@ -10,17 +10,24 @@ void print_times_table(int n) {
     for (i = 0; i <= n; i++) {
         for (j = 0; j <= n; j++) {
             int result = i * j;
+            char buffer[4];
+            int len;
+
             if (result < 10) {
-                putchar(result + '0');
+                buffer[0] = result + '0';
+                len = 1;
             } else {
-                putchar(result / 10 + '0');
-                putchar(result % 10 + '0');
+                buffer[0] = result / 10 + '0';
+                buffer[1] = result % 10 + '0';
+                len = 2;
             }
-            if (j != n) {
-                putchar(',');
-                putchar(' ');
-            }
+
+            buffer[len++] = ',';
+            buffer[len++] = ' ';
+            buffer[len++] = '\0';
+
+            write(1, buffer, len);
         }
-        putchar('\n');
+        write(1, "\n", 1);
     }
 }
