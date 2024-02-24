@@ -10,12 +10,13 @@ void print_times_table(int n) {
     for (i = 0; i <= n; i++) {
         for (j = 0; j <= n; j++) {
             int result = i * j;
-            char buffer[5];
+            char buffer[10]; // Adjusted buffer size
             int len;
 
             if (result < 10) {
-                buffer[0] = result + '0';
-                len = 1;
+                buffer[0] = ' ';
+                buffer[1] = result + '0';
+                len = 2;
             } else {
                 buffer[0] = result / 10 + '0';
                 buffer[1] = result % 10 + '0';
@@ -24,6 +25,11 @@ void print_times_table(int n) {
 
             buffer[len++] = ',';
             buffer[len++] = ' ';
+
+            // Adjust spaces for alignment
+            if (j != n && result < 10)
+                buffer[len++] = ' ';
+            
             buffer[len] = '\0';
 
             write(1, buffer, len);
