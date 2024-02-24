@@ -1,25 +1,22 @@
 #include <stdio.h>
 
-int main(void)
-{
-    int first = 1, second = 2, next;
-    int i;
+int main() {
+    unsigned long a = 1, b = 2, c;
+    int count;
 
-    printf("%d, %d, ", first, second);
+    printf("1, 2, ");
 
-    for (i = 3; i <= 98; ++i)
-    {
-        next = first + second;
-        printf("%d", next);
-
-        if (i != 98)
+    for (count = 2; count < 98; count++) {
+        c = a + b;
+        printf("%lu", c);
+        if (count < 97) {
             printf(", ");
-
-        first = second;
-        second = next;
+        }
+        a = b;
+        b = c;
     }
-
     printf("\n");
 
-    return (0);
+    return 0;
 }
+
