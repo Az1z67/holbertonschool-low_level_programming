@@ -1,22 +1,27 @@
 #include <stdio.h>
 
 int main() {
-    unsigned long a = 1, b = 2, c;
-    int count;
+    int n = 98;
+    int t1 = 1, t2 = 2;
+    int nextTerm;
 
-    printf("1, 2, ");
 
-    for (count = 2; count < 98; count++) {
-        c = a + b;
-        printf("%lu", c);
-        if (count < 97) {
+    printf("%d, %d, ", t1, t2);
+
+
+    for (int i = 3; i <= n; ++i) {
+        nextTerm = t1 + t2;
+        printf("%d", nextTerm);
+
+
+        if (i < n) {
             printf(", ");
         }
-        a = b;
-        b = c;
-    }
-    printf("\n");
 
+        t1 = t2;
+        t2 = nextTerm;
+    }
+
+    printf("\n");
     return 0;
 }
-
