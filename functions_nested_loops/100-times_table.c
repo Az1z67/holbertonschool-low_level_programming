@@ -16,18 +16,21 @@ void print_times_table(int n) {
             if (result < 10) {
                 buffer[0] = ' ';
                 buffer[1] = ' ';
-                buffer[2] = result + '0';
-                len = 3;
+                buffer[2] = ' ';
+                buffer[3] = result + '0';
+                len = 4;
             } else if (result < 100) {
                 buffer[0] = ' ';
-                buffer[1] = (result / 10) + '0';
-                buffer[2] = (result % 10) + '0';
-                len = 3;
+                buffer[1] = ' ';
+                buffer[2] = (result / 10) + '0';
+                buffer[3] = (result % 10) + '0';
+                len = 4;
             } else {
-                buffer[0] = (result / 100) + '0';
-                buffer[1] = ((result / 10) % 10) + '0';
-                buffer[2] = (result % 10) + '0';
-                len = 3;
+                buffer[0] = ' ';
+                buffer[1] = (result / 100) + '0';
+                buffer[2] = ((result / 10) % 10) + '0';
+                buffer[3] = (result % 10) + '0';
+                len = 4;
             }
 
             buffer[len++] = ',';
