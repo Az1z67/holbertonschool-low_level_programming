@@ -1,5 +1,16 @@
 #include <stdio.h>
 
+
+/**
+ * main - Entry point of the program
+ *
+ * This function calculates and prints the first 50 Fibonacci numbers,
+ * separated by commas and spaces.
+ *
+ * Return: Always 0 (Success)
+ */
+
+
 int main(void)
 {
 long fib[50];
