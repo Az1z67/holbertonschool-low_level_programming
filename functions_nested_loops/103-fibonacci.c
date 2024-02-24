@@ -1,5 +1,15 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point of the program
+ *
+ * This function that finds and prints the sum,
+ * of the even-valued terms, followed by a new line.
+ *
+ * Return: Always 0 (Success)
+ */
+
+
 int main(void)
 {
 	int term1 = 1, term2 = 2, next_term = 0;
