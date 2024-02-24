@@ -1,24 +1,25 @@
 #include <stdio.h>
 
-int main() {
-    int a = 1, b = 2, c;
+int main(void)
+{
+    int first = 1, second = 2, next;
     int i;
 
-    printf("%d, %d, ", a, b);
+    printf("%d, %d, ", first, second);
 
-    for (i = 3; i <= 98; ++i) {
-        c = a + b;
-        printf("%d", c);
+    for (i = 3; i <= 98; ++i)
+    {
+        next = first + second;
+        printf("%d", next);
 
         if (i != 98)
             printf(", ");
 
-        a = b;
-        b = c;
+        first = second;
+        second = next;
     }
 
     printf("\n");
 
-    return 0;
+    return (0);
 }
-
