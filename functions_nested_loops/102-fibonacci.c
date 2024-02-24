@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    long long fib[50];
+    long fib[50];
     int i;
 
     fib[0] = 1;
@@ -12,10 +12,10 @@ int main() {
     }
 
     for (i = 0; i < 49; i++) {
-        printf("%lld, ", fib[i]);
+        printf("%ld, ", fib[i]);
     }
 
-    printf("%lld\n", fib[49]);
+    printf("%ld\n", fib[49]);
 
     return 0;
 }
