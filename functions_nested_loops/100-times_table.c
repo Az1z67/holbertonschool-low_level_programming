@@ -24,11 +24,11 @@ void print_times_table(int n) {
 
             buffer[len++] = ',';
             buffer[len++] = ' ';
-            buffer[len++] = '\n';
             buffer[len] = '\0';
 
             write(1, buffer, len);
         }
+        write(1, "\n", 1);
     }
 }
 
