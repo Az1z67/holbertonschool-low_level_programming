@@ -1,16 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int count = 2;
-    int a = 1, b = 2, c;
-    
+    unsigned long a = 1, b = 2, c;
+    int count;
+
     printf("1, 2, ");
 
-    while (count < 98) {
+    for (count = 2; count < 98; count++) {
         c = a + b;
-        printf("%d", c);
-        count++;
-        if (count < 98) {
+        printf("%lu", c);
+        if (count < 97) {
             printf(", ");
         }
         a = b;
@@ -20,3 +19,4 @@ int main() {
 
     return 0;
 }
+
