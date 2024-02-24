@@ -1,5 +1,5 @@
 #include "main.h"
-#include <unistd.h> // Для использования функции write
+#include <unistd.h>
 
 void print_times_table(int n) {
     int i, j;
@@ -10,7 +10,7 @@ void print_times_table(int n) {
     for (i = 0; i <= n; i++) {
         for (j = 0; j <= n; j++) {
             int result = i * j;
-            char buffer[5]; // Буфер для хранения символа, двух пробелов, запятой и символа новой строки
+            char buffer[5];
             int len;
 
             if (result < 10) {
@@ -26,9 +26,9 @@ void print_times_table(int n) {
             buffer[len++] = ' ';
             buffer[len++] = '\0';
 
-            write(1, buffer, len); // Записываем символы в стандартный вывод (stdout)
+            write(1, buffer, len);
         }
-        write(1, "\n", 1); // Переходим на новую строку
+        write(1, "\n", 1);
     }
 }
 
