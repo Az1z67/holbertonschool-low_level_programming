@@ -1,26 +1,19 @@
 #include <stdio.h>
 
-int main(void) {
-    unsigned long a = 1, b = 2, c;
-    int count = 2;
+int main() {
+    int a = 1, b = 2;
+    int next;
 
-    printf("%lu, %lu, ", a, b);
+    printf("%d, %d, ", a, b);
 
-    while (count < 98) {
-        c = a + b;
-        printf("%lu", c);
-        count++;
-
-        if (count != 98) {
-            printf(", ");
-        }
-
+    for (int i = 3; i <= 98; ++i) {
+        next = a + b;
+        printf("%d, ", next);
         a = b;
-        b = c;
+        b = next;
     }
 
     printf("\n");
 
     return 0;
 }
-
