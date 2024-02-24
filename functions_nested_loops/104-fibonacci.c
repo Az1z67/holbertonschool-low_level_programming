@@ -1,20 +1,24 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
     unsigned long a = 1, b = 2, c;
-    int count;
+    int count = 2;
 
-    printf("1, 2, ");
+    printf("%lu, %lu, ", a, b);
 
-    for (count = 2; count < 98; count++) {
+    while (count < 98) {
         c = a + b;
         printf("%lu", c);
-        if (count < 97) {
+        count++;
+
+        if (count != 98) {
             printf(", ");
         }
+
         a = b;
         b = c;
     }
+
     printf("\n");
 
     return 0;
