@@ -4,11 +4,13 @@
  * print_number - Prints a number
  * @n: The number to be printed
  *
- * print_times_table - function that prints the times table of the input, n
+ * Print_times_table - function that prints the times table of the input, n
  * starting with 0.
  *
  * @n: The value of the times table to be printed.
  */
+
+
 void print_number(int n);
 void print_times_table(int n)
 {
