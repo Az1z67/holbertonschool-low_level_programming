@@ -8,7 +8,7 @@ int main(void)
 
 	printf("%lu, %lu, ", fibo1, fibo2);
 
-for (count = 2; count < 98; count++);
+for (count = 2; count < 98; count++)
 {
 	if (fibo1 + fibo2 > 10000000000 || fibo_half1 > 0 || fibo_half2 > 0)
 	{
