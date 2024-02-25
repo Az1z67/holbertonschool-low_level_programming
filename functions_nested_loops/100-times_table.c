@@ -10,12 +10,6 @@ void print_number(int n);
  * print_times_table - Prints the times table of the input,
  * starting with 0.
  * @n: The value of the times table to be printed.
- *
- *
- * print_number - Prints a number
- * @n: The number to be printed
- *
- *
  */
 void print_times_table(int n)
 {
@@ -38,7 +32,7 @@ void print_times_table(int n)
             {
                 _putchar((result / 100) + '0');
                 _putchar(((result / 10)) % 10 + '0');
-		_putchar(((result / 10)) % 10 + '0');
+		_putchar(((result % 10)) + '0');
             }
             else if (result >= 10)
             {
@@ -59,15 +53,15 @@ void print_times_table(int n)
     }
 }
 
-void print_number(int n)
-{
-    if (n >= 10)
-    {
-        _putchar((n / 10) + '0');
-        _putchar((n % 10) + '0');
-    }
-    else
-    {
-        _putchar(n + '0');
-    }
-}
+	void print_number(int n)
+	{
+    	if (n >= 10)
+    	{
+        	_putchar((n / 10) + '0');
+        	_putchar((n % 10) + '0');
+    	}
+    	else
+    	{
+        	_putchar(n + '0');
+    	}
+	}
