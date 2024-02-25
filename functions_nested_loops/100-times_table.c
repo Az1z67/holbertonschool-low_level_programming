@@ -4,8 +4,13 @@
  * print_number - Prints a number
  * @n: The number to be printed
  *
- * Print_times_table - function that prints the times table of the input, n
- * starting with 0.
+ *
+ * print_times_table - Prints the times table up to a specified number.
+ * @n: The number specifying the size of the times table (0 <= n <= 15)
+ *
+ * This function prints the times table starting from 0 up to the specified
+ * number 'n'. It ensures that the table is properly formatted and aligned.
+ *
  *
  * @n: The value of the times table to be printed.
  */
