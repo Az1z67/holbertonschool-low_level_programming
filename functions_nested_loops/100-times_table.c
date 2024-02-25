@@ -52,6 +52,10 @@ void print_times_table(int n)
     }
 }
 
+/**
+ * print_number - Prints a number
+ * @n: The number to be printed
+ */
 void print_number(int n)
 {
     if (n >= 10)
@@ -59,4 +63,9 @@ void print_number(int n)
         _putchar((n / 10) + '0');
         _putchar((n % 10) + '0');
     }
+    else
+    {
+        _putchar(n + '0');
+    }
+}
 
