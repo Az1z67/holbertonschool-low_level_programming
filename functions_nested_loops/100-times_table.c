@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "main.h"
 
 /**
  * print_number - Prints a number
