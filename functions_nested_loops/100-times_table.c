@@ -43,13 +43,22 @@ void print_times_table(int n)
         for (j = 0; j <= n; j++)
         {
             int result = i * j;
-
             if (j != 0)
             {
                 _putchar(',');
                 _putchar(' ');
             }
-
+            if (result < 10 && j != 0)
+            {
+                _putchar(' ');
+                _putchar(' ');
+                _putchar(' ');
+            }
+            else if (result < 100 && j != 0)
+            {
+                _putchar(' ');
+                _putchar(' ');
+            }
             print_number(result);
         }
         _putchar('\n');
