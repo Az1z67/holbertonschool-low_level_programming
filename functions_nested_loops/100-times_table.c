@@ -24,12 +24,11 @@ void print_times_table(int n)
                 _putchar(',');
                 _putchar(' ');
             }
-            if (prod >= 100)
+            if (prod = 100)
 	    {
-		    _putchar((prod / 100) + '0');
-		    _putchar(((prod / 10)) % 10 + '0');
+		    _putchar(prod);
+		    
 	    }
-	
             else if (result >= 10)
             {
                 _putchar(' ');
