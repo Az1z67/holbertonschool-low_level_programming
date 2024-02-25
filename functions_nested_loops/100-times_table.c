@@ -48,23 +48,12 @@ void print_times_table(int n)
             {
                 _putchar(',');
                 _putchar(' ');
+
+                if (result < 10)
+                    _putchar(' ');
             }
 
-            if (result < 10)
-            {
-                _putchar(' ');
-                _putchar(' ');
-                print_number(result);
-            }
-            else if (result < 100)
-            {
-                _putchar(' ');
-                print_number(result);
-            }
-            else
-            {
-                print_number(result);
-            }
+            print_number(result);
         }
         _putchar('\n');
     }
