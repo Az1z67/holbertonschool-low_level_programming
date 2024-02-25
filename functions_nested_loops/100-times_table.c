@@ -6,27 +6,21 @@
  */
 void print_number(int n)
 {
-    if (n >= 100)
+    if (n >= 10)
     {
-        _putchar((n / 100) + '0');
-        _putchar(((n / 10) % 10) + '0');
-        _putchar((n % 10) + '0');
-    }
-    else if (n >= 10)
-    {
-        _putchar(' ');
         _putchar((n / 10) + '0');
         _putchar((n % 10) + '0');
     }
     else
     {
-        if (n != 0)
-            _putchar(' ');
-
         _putchar(n + '0');
     }
 }
 
+/**
+ * print_times_table - Prints the n times table
+ * @n: The number to determine the size of the times table
+ */
 void print_times_table(int n)
 {
     int i, j;
@@ -36,27 +30,32 @@ void print_times_table(int n)
 
     for (i = 0; i <= n; i++)
     {
-	    for (j = 0; j <= n; j++)
+        for (j = 0; j <= n; j++)
         {
             int result = i * j;
-
             if (j != 0)
             {
                 _putchar(',');
                 _putchar(' ');
-
-                if (result < 10)
-                    _putchar(' ');
             }
-            else if (result < 10)
+            if (result >= 100)
+            {
+                print_number(result);
+            }
+            else if (result >= 10)
             {
                 _putchar(' ');
-                _putchar(' ');
+                print_number(result);
             }
-
-            print_number(result);
+            else
+            {
+                if (j != 0)
+                {
+                    _putchar(' ');
+                    _putchar(' ');
+                }
+                print_number(result);
+            }
         }
         _putchar('\n');
     }
-}
-
