@@ -1,21 +1,7 @@
 #include "main.h"
 
-/**
- * print_number - Prints a number
- * @n: The number to be printed
- */
-void print_number(int n)
-{
-    if (n >= 10)
-    {
-        _putchar((n / 10) + '0');
-        _putchar((n % 10) + '0');
-    }
-    else
-    {
-        _putchar(n + '0');
-    }
-}
+/* Function prototype */
+void print_number(int n);
 
 /**
  * print_times_table - Prints the n times table
@@ -59,3 +45,21 @@ void print_times_table(int n)
         }
         _putchar('\n');
     }
+}
+
+/**
+ * print_number - Prints a number
+ * @n: The number to be printed
+ */
+void print_number(int n)
+{
+    if (n >= 10)
+    {
+        _putchar((n / 10) + '0');
+        _putchar((n % 10) + '0');
+    }
+    else
+    {
+        _putchar(n + '0');
+    }
+}
