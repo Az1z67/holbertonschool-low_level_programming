@@ -3,7 +3,7 @@
 
 /**
  *
- * _isdigit - is the function that checks if it is digits
+ * _isdigit - checks if the given character is a digit
  * @c: is a variable value
  *
  * Return: 1 if it is digit and 0 if not
