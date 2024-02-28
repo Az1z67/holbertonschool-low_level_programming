@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
-* reverse_array - function returns reverse of array
-* @a: takes in a character
-* @n:take in a char
-* Return: void
+* reverse_array - function that returns reverse
+* @a: takes in a value
+* @n:takes in a char
 */
 
 void reverse_array(int *a, int n)
