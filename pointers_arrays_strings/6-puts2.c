@@ -10,10 +10,11 @@ void puts2(char *str)
 int len = 0;
 int j;
 
-char *len = str;
+char *i = str;
 
-while (*len != '\0')
+while (*i != '\0')
 {
+i++;
 len++;
 }
 len = len - 1;
