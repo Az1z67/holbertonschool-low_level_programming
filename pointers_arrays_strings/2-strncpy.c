@@ -3,7 +3,7 @@
 /**
  *_strncpy - function for copying
  *@dest: str1
- *@dest: str2
+ *@src: str2
  *@n: bytes
  *Return: dest
  */
