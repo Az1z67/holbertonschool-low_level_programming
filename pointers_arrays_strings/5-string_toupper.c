@@ -4,11 +4,9 @@
  * @n: pointer
  * Return: n
  */
-char *string_toupper(char *)
+char *string_toupper(char *n)
 {
-	int j;
-
-	j = 0;
+	int j = 0;
 	while (n[j] != '\0')
 	{
 		if (n[j] >= 'a' && n[j] <= 'z')
