@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- * _strcat - function for connecting strings
- * @dest: 1st str
- * @src: 2nd str
- * Return: dest.
+ * leet - function that changes str to num
+ * @n: str
+ * Return: n value
  */
 
-char *_strcat(char *dest, char *src)
+char *leet(char *n)
 {
-	int i = 0;
-	int j = 0;
+	int i, j;
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	while (dest[i] != '\0')
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		i++;
-		while (src[j] != '\0')
+		for (j = 0; j < 10; j++)
 		{
-			dest[i] = src[j];
-			i++;
-			j++;
+			if (n[i] == s1[j])
+			{
+				n[i] = s2[j];
+			}
 		}
-		return (dest)
 	}
+	return (n);
 }
