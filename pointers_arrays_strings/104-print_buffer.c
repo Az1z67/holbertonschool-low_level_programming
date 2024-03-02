@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  *print_buffer - function that prints a buffer.
  *@b: Buffer.
