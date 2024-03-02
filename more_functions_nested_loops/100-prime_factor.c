@@ -15,10 +15,10 @@ int main(void)
 	while (num != 1)
 	{
 		if (num % div == 0)
-		{	
+		{
 			num = num / div;
 			prime = div;
-		}	
+		}
 		div += 1;
 	}
 	printf("%ld\n", prime);
