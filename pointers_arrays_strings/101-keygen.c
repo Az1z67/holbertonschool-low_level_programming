@@ -6,12 +6,13 @@
 
 int main(void)
 {
+
+int i;
 char password[len + 1];
 const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
 srand(time(NULL));
 
-int i;
 
 for (i = 0; i < len; i++)
 {
