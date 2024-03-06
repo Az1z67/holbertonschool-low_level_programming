@@ -2,7 +2,7 @@
 
 /**
  * _strstr - find in needle from haysatack
- * @haysatack: str1
+ * @haystack: str1
  * @needle: str2
  * Return: haystack or 0
  */
