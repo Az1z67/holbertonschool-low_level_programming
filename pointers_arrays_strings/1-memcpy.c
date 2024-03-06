@@ -4,6 +4,7 @@
  * _memcpy - copies from src to dest
  * @src: first address
  * @dest: second
+ * @n: count of bytes
  * Return: dest
  */
 
