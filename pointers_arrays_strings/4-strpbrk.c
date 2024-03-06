@@ -1,11 +1,13 @@
 #include "main.h"
 #include <stddef.h>
+
 /**
  * _strpbrk - searching for a value from str2
  * @s: the str1
- * @accept: str2 
+ * @accept: str2
  * Return: an address or NULL
  */
+
 char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i;
