@@ -1,14 +1,16 @@
 #include "main.h"
 
+
 /**
- * _memset - fill s with values
- * @s: address
- * @b: value
- * @n: bytes of address
- * Return: s
+ *_memset - fill the memory with values
+ *@s: address
+ *@b: value
+ *@n: number of bytes
+ *Return: s
  */
 
-char char *_memset(char *s, char b, unsigned int n)
+
+char *_memset(char *s, char b, unsigned int n)
 {
 	int i = 0;
 
