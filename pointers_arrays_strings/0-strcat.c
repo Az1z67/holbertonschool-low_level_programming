@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _strcat - function for connecting strings
  * @dest: 1st str
