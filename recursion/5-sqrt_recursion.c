@@ -4,7 +4,6 @@
  * @n: number1
  * @base: number2
  * Return: int
- * _sqrt_recursion - function that returns the natural square root of a number
  */
 int checker(int n, int base)
 {
@@ -17,6 +16,8 @@ int checker(int n, int base)
 
 /**
  * _sqrt_recursion - function that returns the natural square root of a number
+ * @n: num
+ * Return: num
  */
 
 int _sqrt_recursion(int n)
