@@ -14,6 +14,11 @@ int checker(int n, int base)
 		return (-1);
 	return (checker(n + 1, base));
 }
+
+/**
+ * _sqrt_recursion - function that returns the natural square root of a number
+ */
+
 int _sqrt_recursion(int n)
 {
 	return (checker(1, n));
