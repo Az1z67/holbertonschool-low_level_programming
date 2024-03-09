@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
  * _strlen_recursion - prints the length of str
  * @s: str
  * Return: length
  */
+
 int _strlen_recursion(char *s)
 {
 	int length = 0;
@@ -21,7 +23,7 @@ int _strlen_recursion(char *s)
 
 int pal_checker(char *s, int i, int j)
 {
-	if (S[i] == s[j])
+	if (s[i] == s[j])
 		if (i < j / 2)
 			return (1);
 		else
@@ -35,7 +37,8 @@ int pal_checker(char *s, int i, int j)
  * @s: ssr
  * Return: 1
  */
+
 int is_palindrome(char *s)
 {
-	return (pal_checker(s, 0, _strlen_recursioni(s) - 1));
+	return (pal_checker(s, 0, _strlen_recursion(s) - 1));
 }
