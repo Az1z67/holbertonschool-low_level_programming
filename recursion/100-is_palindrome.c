@@ -24,12 +24,20 @@ int _strlen_recursion(char *s)
 int pal_checker(char *s, int i, int j)
 {
 	if (s[i] == s[j])
-		if (i < j / 2)
-			return (1);
+	{
+		if (i <= j / 2)
+		{
+			return pal_checker(s, i + 1, J - 1);
+		}
 		else
-			return (pal_checker(s, i + 1, j - 1));
+		{
+			return (1);
+		}
+	}
 	else
+	{
 		return (0);
+	}
 }
 
 /**
