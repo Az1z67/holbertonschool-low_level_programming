@@ -8,19 +8,17 @@
  * @s2: 1str
  * Return: NULL if = 0
  */
+
+
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
 	int a, b, c, d;
 
 	if (s1 == 0)
-	{
-		return (NULL);
-	}
+		s1 = "";
 	if (s2 == 0)
-	{
-		return (NULL);
-	}
+		s2 = "";
 	for (a = 0; s1[a] != '\0'; a++)
 		;
 	for (b = 0; s2[b] != '\0'; b++)
