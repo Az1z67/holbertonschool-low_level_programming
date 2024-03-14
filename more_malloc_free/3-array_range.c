@@ -6,6 +6,7 @@
  * array_range - function that creates an array of integers
  * @min: address
  * @max: size
+ * Return: p.
  */
 int *array_range(int min, int max)
 {
