@@ -4,9 +4,9 @@
 
 /**
  * _calloc - function that allocates memory for an array, using malloc
- * @nmemb: number
- * @size: size of
- * Return: NULL if failed.
+ * @nmemb: int
+ * @size: size
+ * Return: 0 or tmp.
  */
 
 
