@@ -1,3 +1,5 @@
+#include "dogy.h"
+
 struct dog
 {
 	char *name;
