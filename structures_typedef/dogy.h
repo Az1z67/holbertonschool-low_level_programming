@@ -6,7 +6,7 @@
  * @age: float
  * @owner: character pointer
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
