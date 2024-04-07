@@ -1,50 +1,85 @@
+#include "lists.h"
+#include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
-#include<stdlib.h>
-#include"lists.h"
+#include <stddef.h>
 
 /**
- *list_t *add_node_end  - function that adds node in end of list
- *@head: pointer to the beginning of the list
- *@str :string
- * Return: node
- */
+  * _strlen - gets length of the string
+  * @s: string
+  * Return: length of the string
+  */
+
+int _strlen(const char *s)
+{
+	int i;
+
+	for (i = 0; s[i]; i++)
+		;
+	return (i);
+}
+
+/**
+  * _strdup - recreation of string duplicate function
+  * @src: source of string to duplicate
+  * Return: pointer to malloc'd space with copied string
+  */
+
+
+void *_strdup(const char *src)
+{
+	int len, i;
+	char *dest;
+
+	len = _strlen(src);
+	dest = malloc((len + 1) * sizeof(char));
+	if (dest == NULL)
+		return (NULL);
+	for (i = 0; src[i]; i++)
+		dest[i] = src[i];
+	dest[i] = '\0';
+	return (dest);
+}
+
+/**
+  * add_node_end - add new nodes to the end of the list
+  * @head: current place in the list
+  * @str: string to add to the head
+  * Return: pointer to current position in list
+  */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new_node, *cont;
+	list_t *new, *current;
+	char *dupstr;
 
-	if (head == NULL || str == NULL)
+	if (str == NULL)
 		return (NULL);
 
-	new_node = malloc(sizeof(list_t));
+	dupstr = _strdup(str);
 
-	if (new_node == NULL)
+	if (dupstr == NULL)
 		return (NULL);
 
-	new_node->str = strdup(str);
+	new = malloc(sizeof(list_t));
 
-	if (new_node->str == NULL)
-	{
-		free(new_node);
+	if (new == NULL)
 		return (NULL);
-	}
-	
-	new_node->len = strlen(str);
-	new_node->next = NULL;
-	
+
+	new->str = dupstr;
+	new->len = _strlen(str);
+	new->next = NULL;
+
 	if (*head == NULL)
 	{
-		*head = new_node;
+		*head = new;
+		return (*head);
 	}
-	else
-	{
-		cont = *head;
 
-		while (cont->next != NULL)
-			cont = cont->next;
+	current = *head;
 
-		cont->next = new_node;
-	}
-	return (new_node);
+	while (current->next != NULL)
+		current = current->next;
+
+	current->next = new;
+	return (*head);
 }
